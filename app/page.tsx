@@ -1,5 +1,6 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
+import { contentCollections, serviceAreaCities } from "@/lib/seo";
 
 export default function HomePage() {
   return (
@@ -126,6 +127,75 @@ export default function HomePage() {
                 Bespoke mixes tailored to your vibe and crowd.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-4 bg-black">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl">
+            <p className="text-cyan-300 font-semibold uppercase tracking-[0.2em] text-sm">
+              Tampa Bay DJ
+            </p>
+            <h2 className="mt-4 text-4xl md:text-5xl font-extrabold uppercase tracking-tight text-white">
+              Local DJ Services Across Tampa Bay
+            </h2>
+            <p className="mt-5 text-lg text-zinc-300 leading-relaxed">
+              Digital King serves Tampa Bay clubs, weddings, private parties, corporate events, nightlife venues, and custom music experiences with local pages built for the searches people actually use.
+            </p>
+          </div>
+
+          <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {serviceAreaCities.map((area) => (
+              <Link
+                key={area.slug}
+                href={`/service-areas/${area.slug}`}
+                className="rounded-2xl border border-white/10 bg-zinc-900 p-6 hover:border-cyan-400/60 transition-colors"
+              >
+                <h3 className="text-2xl font-bold text-cyan-300">{area.city} DJ Services</h3>
+                <p className="mt-3 text-zinc-400">{area.metaDescription}</p>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-10">
+            <Link
+              href="/service-areas"
+              className="inline-block rounded-full border border-white/20 px-6 py-3 font-bold text-white hover:border-cyan-400 transition-colors"
+            >
+              View All Service Areas
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-4 bg-zinc-950">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl">
+            <p className="text-cyan-300 font-semibold uppercase tracking-[0.2em] text-sm">
+              SEO Content Engine
+            </p>
+            <h2 className="mt-4 text-4xl md:text-5xl font-extrabold uppercase tracking-tight text-white">
+              DJ Planning Resources for Events, Venues, and Nightlife
+            </h2>
+            <p className="mt-5 text-lg text-zinc-300 leading-relaxed">
+              These clusters support Tampa Bay DJ searches beyond the homepage: city pages, event planning pages, venue resources, nightlife topics, and booking guides.
+            </p>
+          </div>
+
+          <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {contentCollections.map((collection) => (
+              <Link
+                key={collection.basePath}
+                href={collection.basePath}
+                className="rounded-2xl border border-white/10 bg-black p-6 hover:border-cyan-400/60 transition-colors"
+              >
+                <h3 className="text-xl font-bold text-cyan-300">{collection.type} Pages</h3>
+                <p className="mt-3 text-zinc-400">
+                  {collection.entries.length} starter SEO page{collection.entries.length === 1 ? "" : "s"} for this cluster.
+                </p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

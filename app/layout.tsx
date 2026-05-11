@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { serviceAreaCities } from "@/lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -85,7 +86,10 @@ export default function RootLayout({
       "latitude": 27.9506,
       "longitude": -82.4572
     },
-    "areaServed": ["Tampa", "St. Petersburg", "Clearwater"],
+    "areaServed": serviceAreaCities.map((city) => ({
+      "@type": "City",
+      "name": city.city
+    })),
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+17278083842",
