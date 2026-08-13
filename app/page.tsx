@@ -8,7 +8,7 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/dj-crowd.jpg"
+            src="/ChatGPT Image Aug 13, 2026, 10_08_47 AM.png
             alt="Digital King performing for a Tampa Bay crowd"
             fill
             priority
