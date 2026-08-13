@@ -47,7 +47,7 @@ export default function HomePage() {
             >
               Text Me
             </a>
-            <ahref="https://mail.google.com/mail/?view=cm&fs=1&to=Digitalkingbeat@gmail.com&su=Booking%20-%20Digital%20King"
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Digitalkingbeat@gmail.com&su=Booking%20-%20Digital%20King"
               className="bg-blue-500 text-white px-6 py-3 rounded-xl text-lg font-semibold hover:bg-blue-400 transition-colors"
             >
               Email Me
