@@ -34,7 +34,7 @@ export default function Page() {
             <h2 className="text-2xl font-bold mb-4 text-white">Link Back to Me</h2>
             <p className="text-zinc-400 text-sm mb-4">Paste this into your website&apos;s Upcoming Events or DJ section:</p>
             <code className="block bg-black p-4 rounded-lg border border-white/10 text-xs text-cyan-300 break-all">
-              {`<a href="https://digitalkingdj.com" target="_blank" rel="noopener">DJ Digital King | Tampa Bay's Premier DJ</a>`}
+              {`<a href="https://djdigitalking.com" target="_blank" rel="noopener">DJ Digital King | Tampa Bay's Premier DJ</a>`}
             </code>
           </div>
         </div>

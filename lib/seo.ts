@@ -1,4 +1,4 @@
-export const siteUrl = "https://digitalkingdj.com";
+export const siteUrl = "https://djdigitalking.com";
 
 export const business = {
   name: "Digital King",

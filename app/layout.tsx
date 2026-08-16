@@ -11,10 +11,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://digitalkingdj.com"),
+
+  ,export const metadata: Metadata = {
+  verification: {
+    google: "A68hGYsXewujMtaKV3fLlB-7jV748rOGV2lmc2bEY3g",
+  },
+  metadataBase: new URL("https://digitalking.com"),
   title: {
     default: "Digital King | Tampa Bay DJ for Clubs, Events, and AI-Powered Entertainment",
     template: "%s | Digital King",
@@ -70,9 +73,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
     "name": "Digital King",
-    "image": "https://digitalkingdj.com/dj-crowd.jpg",
-    "@id": "https://digitalkingdj.com",
-    "url": "https://digitalkingdj.com",
+    "image": "https://djdigitalking.com/dj-crowd.jpg",
+    "@id": "https://djdigitalking.com",
+    "url": "https://djdigitalking.com",
     "telephone": "+17278083842",
     "address": {
       "@type": "PostalAddress",
