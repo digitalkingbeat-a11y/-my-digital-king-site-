@@ -11,13 +11,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-
-
-  ,export const metadata: Metadata = {
-  verification: {
-    google: "A68hGYsXewujMtaKV3fLlB-7jV748rOGV2lmc2bEY3g",
-  },
-  metadataBase: new URL("https://digitalking.com"),
+});
+  export const metadata: Metadata = {
+verification: {
+google: "A68hGYsXewujMtaKV3fLlB-7jV748rOGV2lmc2bEY3g",
+},
+  metadataBase: new URL("https://my-digital-king-site.vercel.app"),
   title: {
     default: "Digital King | Tampa Bay DJ for Clubs, Events, and AI-Powered Entertainment",
     template: "%s | Digital King",
