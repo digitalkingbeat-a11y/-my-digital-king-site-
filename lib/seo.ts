@@ -1,4 +1,4 @@
-export const siteUrl = "https://djdigitalking.com";
+export const siteUrl = "https://my-digital-king-site.vercel.app";
 
 export const business = {
   name: "Digital King",
